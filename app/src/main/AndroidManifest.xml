@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="test.com.adnroidproject">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RetroftOkhttpRxJavaActivity"
+            android:label="@string/title_activity_recycler_view" />
+        <activity
+            android:name=".KotlinTestActivity"
+            android:label="@string/title_activity_kotlin_test" />
+        <activity
+            android:name=".AchartengineActivity"
+            android:label="@string/title_activity_achartengine" />
+        <activity
+            android:name=".MpAndroidChartActivity"
+            android:label="@string/title_activity_mp_android_chart" />
+        <activity
+            android:name=".NdkActivity"
+            android:label="@string/title_activity_ndk" />
+        <activity
+            android:name=".VitamioActivity"
+            android:label="@string/title_activity_vitamio" />
+        <activity
+            android:name=".LitePalActivity"
+            android:label="@string/title_activity_lite_pal" />
+        <activity
+            android:name=".SateLLiteMenuActivity"
+            android:label="@string/title_activity_download" />
+        <activity android:name=".GlideOrPicassoActivity" />
+        <activity android:name=".RxBusActivity" />
+        <activity android:name=".PickPhotoActivity" />
+        <activity android:name=".BlurActivity"></activity>
+    </application>
+
+</manifest>

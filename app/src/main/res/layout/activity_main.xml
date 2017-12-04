@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_rxjavaRetroft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="RetroftOkhttpRxJava" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_aSimpleCache"
+                    android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="aSimpleCache，比sp功能完善" />
+
+                <TextView
+                    android:id="@+id/tv_aSimpleCache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_AChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="AchartengineView" />
+
+            <Button
+                android:id="@+id/btn_mpAndroidChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Mpandroidchart" />
+
+            <Button
+                android:id="@+id/btn_Ndk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Ndk开发" />
+
+            <Button
+                android:id="@+id/btn_vitamio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="vitamio视频播放框架" />
+
+            <Button
+                android:id="@+id/btn_LitePal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="LitePal(ORM数据框架)" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="NFC技术" />
+
+            <Button
+                android:id="@+id/btn_Glide"
+                android:text="Glide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+            <Button
+                android:id="@+id/btn_RxBus"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:text="RXBUS(类似回调，方便)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/btnSateLLiteMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="MyView(自定义view)"
+                />
+            <Button
+                android:id="@+id/btnBlur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="模糊处理"
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

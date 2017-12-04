@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/single_1" android:title="单选1" android:icon="@drawable/ic_launcher"/>
+        <item android:id="@+id/single_2" android:title="单选2" android:icon="@drawable/ic_launcher"/>
+        <item android:id="@+id/single_3" android:title="单选3" android:icon="@drawable/ic_launcher"/>
+    </group>
+
+
+    <item android:id="@+id/menu_item1" android:title="菜单1" android:icon="@drawable/ic_launcher"/>
+    <item android:id="@+id/menu_item2" android:title="菜单2" android:icon="@drawable/ic_launcher"/>
+    <item android:id="@+id/menu_item3" android:title="菜单3" android:icon="@drawable/ic_launcher"/>
+    <item android:id="@+id/menu_item4" android:title="菜单4" android:icon="@drawable/ic_launcher"/>
+
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+   android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="图片加载，放弃传统的bitmap imageloader加载，，
+ * 改用Glide加载，说到glide 类似的有Picasso, 但是Glide扩展性强，，
+ * 加载速度快，最主要 内存管理比较合理，比picasso加载消耗内存少，
+ * 不过照片质量 稍逊于picasso.  如需加载高质量的 GlideModule 子类，
+ * 把 Bitmap 的格式转换到 ARGB_8888：具体详情：http://www.apkbus.com/blog-705730-62880.html"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Glide:"
+        />
+    <ImageView
+        android:id="@+id/iv_Glide"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="200dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Picasso:"
+        android:layout_marginTop="40dp"
+        />
+    <ImageView
+        android:id="@+id/iv_Picasso"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>
+    </ScrollView>
+    </LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AdnroidProject</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_recycler_view">RecyclerView</string>
+    <string name="title_activity_kotlin_test">KotlinTestActivity</string>
+    <string name="title_activity_achartengine">AchartengineActivity</string>
+    <string name="analysis_student_scroe">历次%s成绩对比分析</string>
+    <string name="analysis_title_exam">(考试)</string>
+    <string name="analysis_title_fraction">(分数)</string>
+    <string name="analysis_title_rank">(排名)</string>
+    <string name="title_activity_mp_android_chart">MpAndroidChartActivity</string>
+    <string name="title_activity_ndk">NdkActivity</string>
+    <string name="title_activity_vitamio">VitamioActivity</string>
+    <string name="title_activity_lite_pal">LitePalActivity</string>
+    <string name="title_activity_download">DownloadActivity</string>
+</resources>

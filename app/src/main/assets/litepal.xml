@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="testDB" ></dbname>
+
+    <version value="1" ></version>
+
+    <list>
+        <mapping class="litepal.Dest"></mapping>
+    </list>
+    <!--<dbname>是数据库的名字
+    <version>是数据库的版本号
+    <list>是数据库的映射模型（数据库表）
+    <mapping>是数据库的映射模型的地址（数据库表结构）-->
+</litepal>

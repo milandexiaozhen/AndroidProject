@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="analysis_pic_bg">#fcfcfc</color>
+    <color name="analysis_color_avg">#09bb07</color>
+    <color name="analysis_name">#323232</color>
+    <color name="analysis_rank">#989898</color>		<!-- 排名颜色 -->
+    <color name="analysis_big_name">#09bb07</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    </resources>

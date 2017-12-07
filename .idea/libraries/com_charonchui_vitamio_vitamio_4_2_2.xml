@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.charonchui.vitamio:vitamio-4.2.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/6602c5140d3771fba307ed432019226faa91164d/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/6602c5140d3771fba307ed432019226faa91164d/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.charonchui.vitamio/vitamio/4.2.2/ea7e0d4e404eaac50f1f5fbe6d58803bb4d42cea/vitamio-4.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

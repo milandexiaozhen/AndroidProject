@@ -20,9 +20,6 @@
             android:name=".RetroftOkhttpRxJavaActivity"
             android:label="@string/title_activity_recycler_view" />
         <activity
-            android:name=".KotlinTestActivity"
-            android:label="@string/title_activity_kotlin_test" />
-        <activity
             android:name=".AchartengineActivity"
             android:label="@string/title_activity_achartengine" />
         <activity
@@ -44,6 +41,7 @@
         <activity android:name=".RxBusActivity" />
         <activity android:name=".PickPhotoActivity" />
         <activity android:name=".BlurActivity"></activity>
+
     </application>
 
 </manifest>

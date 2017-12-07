@@ -1,8 +1,12 @@
 package test.com.adnroidproject;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
+import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -48,6 +52,9 @@ public class MainActivity extends Activity {
     Button btnBlur;
     private ACache aCache;
     private Subscription rxSubscription;
+    private LocalBroadcastManager lbm;
+    private LocalBroadReveiver reveiver;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -77,6 +84,13 @@ public class MainActivity extends Activity {
         switch (view.getId()) {
             case R.id.btn_rxjavaRetroft:
                 startActivity(new Intent(this, RetroftOkhttpRxJavaActivity.class));
+                //顺便试试本地广播
+                lbm= LocalBroadcastManager.getInstance(this);
+                reveiver=new LocalBroadReveiver();
+                IntentFilter intentFilter=new IntentFilter();
+                intentFilter.addAction("test.com.broadcast");
+                lbm.registerReceiver(reveiver,intentFilter);
+
                 break;
             case R.id.btn_aSimpleCache:
                 tvASimpleCache.setText(aCache.getAsString("test"));
@@ -124,13 +138,20 @@ public class MainActivity extends Activity {
         }
     }
 
+    public class  LocalBroadReveiver extends BroadcastReceiver {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Toast.makeText(context,intent.getStringExtra("lbm"),Toast.LENGTH_LONG).show();
 
+        }
+    }
 
     protected void onDestroy() {
         super.onDestroy();
         if(!rxSubscription.isUnsubscribed()) {
             rxSubscription.unsubscribe();
         }
+        lbm.unregisterReceiver(reveiver);
     }
 
 

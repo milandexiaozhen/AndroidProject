@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="cn.bingoogolapple:bga-photopicker-1.2.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/29ac4c45191dcc42091ba8924afd4739761e520e/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/29ac4c45191dcc42091ba8924afd4739761e520e/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.bingoogolapple/bga-photopicker/1.2.3/6388c944575c344891c2d1a3771345414335bc08/bga-photopicker-1.2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

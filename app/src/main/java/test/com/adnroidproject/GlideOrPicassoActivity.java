@@ -21,11 +21,13 @@ public class GlideOrPicassoActivity extends BaseActivity {
     ImageView ivGlide;
     @BindView(R.id.iv_Picasso)
     ImageView ivPicasso;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_glide);
         ButterKnife.bind(this);
+
         Glide.with(this)
                 .load("http://inthecheesefactory.com/uploads/source/glidepicasso/cover.jpg")
                 .into(ivGlide);
@@ -33,4 +35,5 @@ public class GlideOrPicassoActivity extends BaseActivity {
                 .load("http://inthecheesefactory.com/uploads/source/glidepicasso/cover.jpg")
                 .into(ivPicasso);
     }
+
 }

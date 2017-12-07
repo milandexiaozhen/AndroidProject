@@ -1,6 +1,8 @@
 package test.com.adnroidproject;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.widget.TextView;
 
@@ -16,12 +18,18 @@ public class RetroftOkhttpRxJavaActivity extends BaseActivity {
     TextView tvPostData;
     @BindView(R.id.tv_GetData)
     TextView tvGetData;
+    @BindView(R.id.lbmText)
+    TextView tvLBM;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view);
         ButterKnife.bind(this);
+        LocalBroadcastManager lbm=LocalBroadcastManager.getInstance(this);
+        Intent intent=new Intent("test.com.broadcast");
+        intent.putExtra("lbm","lbm intent data");
+        lbm.sendBroadcast(intent);
         NetWorks net=new NetWorks(RetroftOkhttpRxJavaActivity.this);
         NetWorks.verfacationCodePost("2", "112", new Observer<Verification>() {
             @Override
@@ -61,5 +69,9 @@ public class RetroftOkhttpRxJavaActivity extends BaseActivity {
                 tvGetData.setText(baseBean.getData().getCategoryNo1().get(0).getName() + "=======" + baseBean.getData().getCategoryNo2().get(0).getName());
             }
         });
+
+
     }
+
+
 }

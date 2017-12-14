@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vitalize来自荷兰的畅销品牌</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta charset="utf-8">
+<meta name="full-screen" content="yes">
+<meta name="x5-fullscreen" content="true">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<link rel="stylesheet" href="css/global.css" />
+<link rel="stylesheet" href="svg/iconfont.css"/>
+<link rel="stylesheet" href="css/spage71.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+ function startFunction(obj) {
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+<!--  var ua = navigator.userAgent.toLowerCase();-->
+
+    if(isAndroid){
+      if( window.android.startFunction && typeof(window.android.startFunction)=="function"){
+       window.android.startFunction(obj);
+      }
+
+    }
+    else {
+         window.webkit.messageHandlers.Share.postMessage({title:'测试分享的标题',content:'测试分享的内容',url:obj});
+    }
+}
+$(window).load(function(){
+	//商品文字和图片 自动垂直居中
+	autoCenter($('.sp_box'),'.sp_txt_shell','.img_shell');
+	
+	function autoCenter($box,$img,$txt){
+		$box.each(function(){
+			var $pH = $(this).innerHeight(),
+				$txtH = $(this).find($img).innerHeight(),	
+				$imgH = $(this).find($txt).innerHeight();
+			if ($txtH < $imgH) {
+				$(this).find($img).css('margin-top',($pH-$txtH)/2 + 'px');	
+			} else {
+				$(this).find($txt).css('margin-top',($pH-$imgH)/2 + 'px');	
+			}
+		});
+	}
+})
+</script>
+</head>
+<body>
+
+<div class="main">
+	<!--banner-->
+	<img src="images/banner_01.jpg" class="banner" />
+	<img src="images/banner_02.jpg" class="banner" />
+	
+	<!--品牌介绍-->
+	<div class="brand_text">
+		<h2><span>品牌介绍</span></h2>
+		<p>vitalize公司成立于2003年，主要市场在欧洲，中东，亚洲，主要采用线上和线下相结合的销售模式，在荷兰当地2000多家线下店铺均有销售。</p>
+	</div>
+	
+	<!--1-->
+	<a class="sp_box" name = "1999"  id="1565" onclick="startFunction('1565')"
+	>
+		<p class="img_shell" href="#"><img src="images/sp_01.jpg"/></p>
+		<div class="sp_txt_shell">
+			<p class="sp_name" href="#">vitalize植物配方睡眠片60粒</p>
+			<p class="sp_blue">自由酣睡 一觉到天亮</p>
+			<p class="sp_tip">
+				三大植物安睡因子<br />
+				辅助添加褪黑素和镁元素<br />
+				天然配方成分，减少过敏原
+			</p>
+			<span class="sp_price">￥<label>99</label></span>
+			<p class="buy_btn" href="#">立即抢购</p>
+		</div>
+		<div class="clear"></div>
+	</a>
+	<!--2-->
+	<a class="sp_box sp_box_even" href="#">
+		<p class="img_shell" href="#"><img src="images/sp_02.jpg"/></p>
+		<div class="sp_txt_shell">
+			<p class="sp_name" href="#">vitalize儿童鱼油咀嚼软胶囊 60粒</p>
+			<p class="sp_blue">智力思维帮  学习不费劲</p>
+			<p class="sp_tip">
+				宝宝眼脑发育必备<br />
+				高含量Omega-3不饱和脂肪酸<br />
+				冷水鱼精炼提取
+			</p>
+			<span class="sp_price">￥<label>108</label></span>
+			<p class="buy_btn" href="#">立即抢购</p>
+		</div>
+		<div class="clear"></div>
+	</a>
+	<!--3-->
+	<a class="sp_box" href="#">
+		<p class="img_shell" href="#"><img src="images/sp_03.jpg"/></p>
+		<div class="sp_txt_shell">
+			<p class="sp_name" href="#">vitalize蔓越莓胶囊精华含片</p>
+			<p class="sp_blue">女人无“炎”关爱</p>
+			<p class="sp_tip">
+				改善女性泌尿系统健康问题<br />
+				三合一独特配方  效果加倍<br />
+				无激素无依赖  可长期服用
+			</p>
+			<span class="sp_price">￥<label>116</label></span>
+			<p class="buy_btn" href="#">立即抢购</p>
+		</div>
+		<div class="clear"></div>
+	</a>
+	<!--4-->
+	<a class="sp_box sp_box_even" href="#">
+		<p class="img_shell" href="#"><img src="images/sp_04.jpg"/></p>
+		<div class="sp_txt_shell">
+			<p class="sp_name" href="#">vitalize锯棕榈前列腺康复片45片</p>
+			<p class="sp_blue">真男人 无惧“腺”制</p>
+			<p class="sp_tip">
+				改善前列腺 尿急尿频<br />
+				独特复合配方<br />
+				特别添加多种营养元素
+			</p>
+			<span class="sp_price">￥<label>128</label></span>
+			<p class="buy_btn" href="#">立即抢购</p>
+		</div>
+		<div class="clear"></div>
+	</a>
+	<!--5-->
+	<a class="sp_box" href="#">
+		<p class="img_shell" href="#"><img src="images/sp_05.jpg"/></p>
+		<div class="sp_txt_shell">
+			<p class="sp_name" href="#">vitalize 氨基葡萄糖片 120片</p>
+			<p class="sp_blue">守护关节  远离关节疼痛</p>
+			<p class="sp_tip">
+				每份含硫酸氨糖1200mg<br />
+				骨骼健康每天不需1快钱<br />
+				硫酸形式对胃无刺激
+			</p>
+			<span class="sp_price">￥<label>118</label></span>
+			<p class="buy_btn" href="#">立即抢购</p>
+		</div>
+		<div class="clear"></div>
+	</a>
+	<!--6-->
+	<a class="sp_box sp_box_even" href="#">
+		<p class="img_shell" href="#"><img src="images/sp_06.jpg"/></p>
+		<div class="sp_txt_shell">
+			<p class="sp_name" href="#">vitalize 还原型辅酶Q10 60粒</p>
+			<p class="sp_blue">给心动力  保持年轻态</p>
+			<p class="sp_tip">
+				生物活性高  吸收好<br />
+				清楚自由基 延缓衰老<br />
+				胸闷焦虑  心脏不适人群
+			</p>
+			<span class="sp_price">￥<label>168</label></span>
+			<p class="buy_btn" href="#">立即抢购</p>
+		</div>
+		<div class="clear"></div>
+	</a>
+	<!--7-->
+	<a class="sp_box" href="#">
+		<p class="img_shell" href="#"><img src="images/sp_07.jpg"/></p>
+		<div class="sp_txt_shell">
+			<p class="sp_name" href="#">vitalize成人鱼油软胶囊 60粒</p>
+			<p class="sp_blue">为心脑健康保驾护航</p>
+			<p class="sp_tip">
+				每粒含Omega-3鱼油1500mg<br />
+				精选天然冷水鱼<br />
+				小颗粒 服用方便
+			</p>
+			<span class="sp_price">￥<label>109</label></span>
+			<p class="buy_btn" href="#">立即抢购</p>
+		</div>
+		<div class="clear"></div>
+	</a>
+	<br /><br /><br />
+</div>
+
+<!--尾部-->
+<footer><ul>
+	<a href="http://www.vitagou.hk"><li class="this"><i class="icon iconfont">&#xe637;</i><span>维他购商城</span></li></a>
+	<a href="http://www.vitagou.hk/search/id/110"><li><i class="icon iconfont">&#xe621;</i>全部分类</li></a>
+	<a href="http://www.vitagou.hk/simple/shoppingcart"><li><i class="icon iconfont">&#xe60f;</i><span>购物车</span></li></a>
+	<a href="http://login.vitagou.com/index.php?r=login/index&url=http://www.vitagou.hk/ucenter/indcenter"><li><i class="icon iconfont">&#xe610;</i><span>个人中心</span></li></a>
+</ul></footer>
+</body>
+</html>

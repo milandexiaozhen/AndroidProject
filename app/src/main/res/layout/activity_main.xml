@@ -116,6 +116,14 @@
                 android:layout_gravity="center"
                 android:text="模糊处理"
                 />
+
+            <Button
+                android:id="@+id/btnJs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="js"
+                />
         </LinearLayout>
 
 

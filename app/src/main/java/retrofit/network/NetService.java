@@ -8,7 +8,6 @@ import retrofit2.http.Field;
 import retrofit2.http.FieldMap;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
-import retrofit2.http.Headers;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
 import rx.Observable;
@@ -43,7 +42,7 @@ public interface NetService {
     @GET("bjws/app.user/login")
     Observable<Verification> getVerfcationGetCache(@Query("tel") String tel, @Query("password") String pass);
 
-    @Headers("Cache-Control: public," + CACHE_CONTROL_CACHE)
+//    @Headers("Cache-Control: public," + CACHE_CONTROL_CACHE)
     @GET("http://www.vitagou.hk/mobile/app_classify")
     Observable<MenuBean> getMainMenu();
 }

@@ -6,6 +6,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.view.View;
@@ -50,11 +52,19 @@ public class MainActivity extends Activity {
     Button btnSateLLiteMenu;
     @BindView(R.id.btnBlur)
     Button btnBlur;
+    @BindView(R.id.btnJs)
+    Button btnJs;
     private ACache aCache;
     private Subscription rxSubscription;
     private LocalBroadcastManager lbm;
     private LocalBroadReveiver reveiver;
+    public static  class  UI{
 
+        public static final Handler HANDLER=new Handler(Looper.getMainLooper());
+        private UI(){
+
+        }
+    }
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -75,11 +85,38 @@ public class MainActivity extends Activity {
                     }
 
                 });
+        View view=new View(this);
+        view.post(new Runnable() {
+            @Override
+            public void run() {
+                Log.e("=====","view.post"+"1");
+            }
+        });
+        UI.HANDLER.post(new Runnable() {
+            @Override
+            public void run() {
+//                Log.e("===","handler.post"+"2");
+                System.out.print("ssss");
+            }
+        });
 
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Log.e("=====","runOnUiThread"+"3");
+            }
+        });
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Log.e("=====","sub thread "+"4");
+            }
+        }).start();
     }
 
+
     @OnClick({R.id.btn_rxjavaRetroft, R.id.btn_aSimpleCache, R.id.btn_AChart, R.id.btn_mpAndroidChart, R.id.btn_Ndk,
-            R.id.btn_vitamio,R.id.btn_LitePal,R.id.btn_Glide,R.id.btn_RxBus,R.id.btnSateLLiteMenu,R.id.btnBlur})
+            R.id.btn_vitamio,R.id.btn_LitePal,R.id.btn_Glide,R.id.btn_RxBus,R.id.btnSateLLiteMenu,R.id.btnBlur,R.id.btnJs})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_rxjavaRetroft:
@@ -135,6 +172,9 @@ public class MainActivity extends Activity {
                 break;
             case R.id.btnBlur:
                 startActivity(new Intent(this,BlurActivity.class));
+                break;
+            case R.id.btnJs:
+                startActivity(new Intent(this,JSActivity.class));
         }
     }
 

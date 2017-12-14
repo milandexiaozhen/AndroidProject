@@ -26,12 +26,13 @@ public class RetroftOkhttpRxJavaActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view);
         ButterKnife.bind(this);
+        //发本地广播
         LocalBroadcastManager lbm=LocalBroadcastManager.getInstance(this);
         Intent intent=new Intent("test.com.broadcast");
         intent.putExtra("lbm","lbm intent data");
         lbm.sendBroadcast(intent);
         NetWorks net=new NetWorks(RetroftOkhttpRxJavaActivity.this);
-        NetWorks.verfacationCodePost("2", "112", new Observer<Verification>() {
+        NetWorks.verfacationCodePost("1", "112", new Observer<Verification>() {
             @Override
             public void onCompleted() {
 

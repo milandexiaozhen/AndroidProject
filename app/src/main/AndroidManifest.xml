@@ -40,8 +40,9 @@
         <activity android:name=".GlideOrPicassoActivity" />
         <activity android:name=".RxBusActivity" />
         <activity android:name=".PickPhotoActivity" />
-        <activity android:name=".BlurActivity"></activity>
-
+        <activity android:name=".BlurActivity" />
+        <activity android:name=".JSActivity" />
+        <activity android:name=".UiThread"></activity>
     </application>
 
 </manifest>

@@ -2,13 +2,31 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
+        is-multidex="true"
         jar="/Users/gaokun/Desktop/MyUtils/AndroidProject/app/libs/achartengine-1.1.0.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="9932e3fb9fbe54e80873e77f72a99f79e33b3250">
-        <dex dex="/Users/gaokun/Desktop/MyUtils/AndroidProject/app/build/intermediates/pre-dexed/debug/achartengine-1.1.0_a092dd6df15c5d593896cb3b328b609ba4c88efe.jar" />
+        <dex dex="/Users/gaokun/Desktop/MyUtils/AndroidProject/app/build/intermediates/transforms/dex/debug/folders/1000/2/achartengine-1.1.0_a092dd6df15c5d593896cb3b328b609ba4c88efe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/gaokun/Desktop/MyUtils/AndroidProject/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="51154d1429b02e26ae34fc9e22019b5d90026bc1">
+        <dex dex="/Users/gaokun/Desktop/MyUtils/AndroidProject/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_49a39c47a4faa4df0a7b8badd925dd27c790ecb0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/gaokun/Desktop/MyUtils/AndroidProject/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
+        <dex dex="/Users/gaokun/Desktop/MyUtils/AndroidProject/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7e5d233f76fc1456e21bb8ab6c9ab2850df2fc07/classes.dex" />
     </item>
 
 </items>

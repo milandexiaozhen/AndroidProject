@@ -6,7 +6,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import org.litepal.crud.DataSupport;
 
@@ -42,6 +45,9 @@ public class LitePalDataAdapter extends RecyclerView.Adapter<LitePalDataAdapter.
         holder.textView.setText(mList.get(position).getName());
        holder.getList(mList);
         holder.getAdapter(this);
+        Glide.with(mContext)
+                .load("http://inthecheesefactory.com/uploads/source/glidepicasso/cover.jpg")
+                .into(holder.ivImage);
     }
 
     public int getItemCount() {
@@ -52,6 +58,8 @@ public class LitePalDataAdapter extends RecyclerView.Adapter<LitePalDataAdapter.
 
         @BindView(R.id.text_view)
         TextView textView;
+        @BindView(R.id.iv_image)
+        ImageView ivImage;
         public List<Dest> mList = new ArrayList<Dest>();
         private LitePalDataAdapter mAdapter;
         LitePalViewHolder(View view) {

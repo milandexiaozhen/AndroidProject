@@ -54,6 +54,8 @@ public class MainActivity extends Activity {
     Button btnBlur;
     @BindView(R.id.btnJs)
     Button btnJs;
+    @BindView(R.id.btn_recyclerview)
+    Button btnRecyclerView;
     private ACache aCache;
     private Subscription rxSubscription;
     private LocalBroadcastManager lbm;
@@ -116,7 +118,8 @@ public class MainActivity extends Activity {
 
 
     @OnClick({R.id.btn_rxjavaRetroft, R.id.btn_aSimpleCache, R.id.btn_AChart, R.id.btn_mpAndroidChart, R.id.btn_Ndk,
-            R.id.btn_vitamio,R.id.btn_LitePal,R.id.btn_Glide,R.id.btn_RxBus,R.id.btnSateLLiteMenu,R.id.btnBlur,R.id.btnJs})
+            R.id.btn_vitamio,R.id.btn_LitePal,R.id.btn_Glide,R.id.btn_RxBus,R.id.btnSateLLiteMenu,R.id.btnBlur,R.id.btnJs,
+    R.id.btn_recyclerview})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_rxjavaRetroft:
@@ -175,6 +178,10 @@ public class MainActivity extends Activity {
                 break;
             case R.id.btnJs:
                 startActivity(new Intent(this,JSActivity.class));
+                break;
+            case R.id.btn_recyclerview:
+                startActivity(new Intent(this,RecyclerViewActivity.class));
+                break;
         }
     }
 

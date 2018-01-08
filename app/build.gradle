@@ -41,7 +41,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.jakewharton:butterknife:8.8.1'
 //    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-//    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     apt 'com.jakewharton:butterknife-compiler:8.8.1'
     testCompile 'junit:junit:4.12'
     //RetroftOkhttpRxjava
@@ -74,5 +73,9 @@ dependencies {
     //pickPhototActivity用的的库
     compile 'cn.bingoogolapple:bga-photopicker:1.2.3@aar'
     compile 'cn.bingoogolapple:bga-adapter:1.1.8@aar'
+    //阿里 Vlayout
+    compile ('com.alibaba.android:vlayout:1.2.6@aar') {
+        transitive = true
+    }
 
 }

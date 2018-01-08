@@ -15,6 +15,7 @@
     <string name="title_activity_vitamio">VitamioActivity</string>
     <string name="title_activity_lite_pal">LitePalActivity</string>
     <string name="title_activity_download">DownloadActivity</string>
+    <string name="recyclerView">recyclerView之LayoutManager使用</string>
     <string name="lbm">使用LocalBroadcastManager有如下好处：
   (1)发送的广播只会在自己App内传播，不会泄露给其他App，确保隐私数据不会泄露
   (2) 其他App也无法向你的App发送该广播，不用担心其他App会来搞破坏

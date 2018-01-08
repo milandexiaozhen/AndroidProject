@@ -42,7 +42,8 @@
         <activity android:name=".PickPhotoActivity" />
         <activity android:name=".BlurActivity" />
         <activity android:name=".JSActivity" />
-        <activity android:name=".UiThread"></activity>
+        <activity android:name=".UiThread" />
+        <activity android:name=".RecyclerViewActivity"></activity>
     </application>
 
 </manifest>
